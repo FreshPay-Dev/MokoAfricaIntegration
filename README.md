@@ -1,5 +1,3 @@
-Here's a comprehensive `README.md` file for your GitHub repository that documents your MokoAfrica API integration projects:
-
 ```markdown
 # MokoAfrica API Integrations
 
@@ -12,6 +10,38 @@ This repository contains sample integrations with MokoAfrica's card payment API 
 - 📧 henock.barakael@mokoafrica.com  
 - 🔗 [LinkedIn Profile](https://linkedin.com/in/henock-barakael)  
 - 🐦 [@hbarakael](https://twitter.com/hbarakael)  
+
+---
+
+## Visual Overview
+
+### MokoAfrica Logo
+
+![MokoAfrica Logo](./LOGO_MOKO_A_fd_bleu.png)
+
+---
+
+### Cybersource Hosted Checkout Flow
+
+#### Step 1: Enter Payment Details
+
+![Step 1 - Enter Card Info](./payment-details.png)
+
+---
+
+#### Step 2: Review the Order
+
+![Step 2 - Review Order](./review-order.png)
+
+---
+
+#### Step 3: Payment Confirmation
+
+![Step 3 - Payment Accepted](./payment-confirmation.png)
+
+> ✅ **Transactions are securely processed by FreshPay Congo, PCI DSS Level 1 certified.**
+
+---
 
 ## Project Structure
 
