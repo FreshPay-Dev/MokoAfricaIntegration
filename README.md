@@ -17,7 +17,7 @@ This repository contains sample integrations with MokoAfrica's card payment API 
 
 ### MokoAfrica Logo
 
-![MokoAfrica Logo](main/assets/images/logo-mokoafrica.png)
+![MokoAfrica Logo](https://github.com/FreshPay-Dev/MokoAfricaIntegration/blob/main/assets/images/logo-mokoafrica.png?raw=true)
 
 ---
 
