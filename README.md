@@ -83,9 +83,9 @@ All implementations use HMAC-SHA256 authentication with these headers:
 ```http
 POST https://test.card.gofreshpay.com/api/v1/payment/orders
 Headers:
-  X-API-Key: 328fab11c5cd494eb0f80c3f7aedb67f
-  X-Timestamp: 2025-07-04T12:34:56Z
-  X-Signature: b9fed45cabc06f8f9ef5c9c8b5f61f05b7b02534934d87bdd460b2f32c1ee64b
+  X-API-Key: your_merchant_api_key_here
+  X-Timestamp: CURRENT_UTC_TIMESTAMP
+  X-Signature: GENERATED_HMAC_SHA256_SIGNATURE
   Content-Type: application/json
 
 Body:
@@ -188,6 +188,43 @@ All implementations support:
 - Status checking
 - Callback handling
 - Error scenarios
+
+## Test Card Information
+
+For testing payments in the sandbox environment, use the following test Visa cards:
+
+### Visa Test Cards
+| Card Number | Scenario | Expiry | CVV | 3DS OTP |
+|-------------|----------|--------|-----|---------|
+| `4242 4242 4242 4242` | Successful payment | Any future date | `123` | `123456` |
+| `4000 0000 0000 0002` | Successful payment | Any future date | `123` | `123456` |
+| `4000 0000 0000 0119` | Declined payment | Any future date | `123` | N/A |
+| `4000 0000 0000 0259` | 3D Secure required | Any future date | `123` | `123456` |
+
+### Test Card Details
+- **Cardholder Name**: `TEST USER`
+- **Postal Code**: 
+  - US: `10001`
+  - EU: `75001` 
+  - UK: `SW1A 1AA`
+
+### Example Test Transaction:
+```json
+{
+  "card_number": "4242424242424242",
+  "expiry_month": "12",
+  "expiry_year": "2026",
+  "cvv": "123",
+  "amount": 100.00,
+  "currency": "USD"
+}
+```
+
+**Important Security Notes**:
+🔒 These test cards only work in the sandbox environment (`test.card.gofreshpay.com`)  
+🔒 Never use real card numbers in test environment  
+🔒 Never commit test card numbers to version control  
+
 
 ## Deployment
 
