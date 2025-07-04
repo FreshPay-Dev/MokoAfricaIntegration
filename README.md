@@ -17,7 +17,7 @@ This repository contains sample integrations with MokoAfrica's card payment API 
 
 ### MokoAfrica Logo
 
-![MokoAfrica Logo](./logo-mokoafrica.png)
+![MokoAfrica Logo](assets/images/logo-mokoafrica.png)
 
 ---
 
@@ -25,19 +25,19 @@ This repository contains sample integrations with MokoAfrica's card payment API 
 
 #### Step 1: Enter Payment Details
 
-![Step 1 - Enter Card Info](./payment-details.png)
+![Step 1 - Enter Card Info](assets/images/payment-details.png)
 
 ---
 
 #### Step 2: Review the Order
 
-![Step 2 - Review Order](./review-order.png)
+![Step 2 - Review Order](assets/images/review-order.png)
 
 ---
 
 #### Step 3: Payment Confirmation
 
-![Step 3 - Payment Accepted](./payment-confirmation.png)
+![Step 3 - Payment Accepted](assets/images/payment-confirmation.png)
 
 > ✅ **Transactions are securely processed by FreshPay Congo, PCI DSS Level 1 certified.**
 
