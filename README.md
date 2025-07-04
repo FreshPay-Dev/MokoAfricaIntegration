@@ -16,7 +16,7 @@ This repository contains sample integrations with MokoAfrica's card payment API 
 
 ### MokoAfrica Logo
 
-![MokoAfrica Logo](assets/images/logo.PNG)
+![MokoAfrica Logo](assets/images/logo.png)
 
 
 ### Cybersource Hosted Checkout Flow
