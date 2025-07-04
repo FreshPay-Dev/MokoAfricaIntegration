@@ -76,6 +76,102 @@ All implementations use HMAC-SHA256 authentication with these headers:
 - `X-Timestamp`: Current UTC timestamp in ISO 8601 format
 - `X-Signature`: HMAC signature of (payload + timestamp)
 
+
+
+### Successful Payment Initiation (HTTP 200)
+**Request:**
+```http
+POST https://test.card.gofreshpay.com/api/v1/payment/orders
+Headers:
+  X-API-Key: 328fab11c5cd494eb0f80c3f7aedb67f
+  X-Timestamp: 2025-07-04T12:34:56Z
+  X-Signature: b9fed45cabc06f8f9ef5c9c8b5f61f05b7b02534934d87bdd460b2f32c1ee64b
+  Content-Type: application/json
+
+Body:
+{
+  "amount": 100.5,
+  "currency": "USD",
+  "merchant_reference": "CMD-1751620411",
+  "bill_to_forename": "Jane",
+  "bill_to_surname": "Doe",
+  "bill_to_email": "jane.doe@example.com",
+  "bill_to_phone": "+12125551212",
+  "bill_to_address_line1": "2000 Broadway St",
+  "bill_to_address_city": "New York",
+  "bill_to_address_state": "NY",
+  "bill_to_address_postal_code": "10023",
+  "bill_to_address_country": "US",
+  "callback_url": "http://your-domain.com/callback"
+}
+```
+
+**Response:**
+```json
+{
+  "status": "success",
+  "data": {
+    "transaction_uuid": "FP-20250704-123456-abc123-CD",
+    "amount": 100.5,
+    "currency": "USD",
+    "merchant_reference": "CMD-1751620411",
+    "message": "Payment initiated successfully",
+    "links": "https://test.card.gofreshpay.com/api/v1/payment/FP-20250704-123456-abc123-CD?sig=5d578333916ed190742e3c48d1dbac80",
+    "financial_details": {
+      "commission_rate": 3.5,
+      "commission_amount": 3.52,
+      "merchant_amount": 96.98
+    }
+  }
+}
+```
+
+### Error Responses
+
+**Invalid Authentication (HTTP 403)**
+```json
+{
+  "status": "error",
+  "error": {
+    "code": "AUTH_403",
+    "message": "Invalid HMAC signature",
+    "details": "Signature verification failed"
+  }
+}
+```
+
+**Validation Error (HTTP 400)**
+```json
+{
+  "status": "error",
+  "error": {
+    "code": "VAL_400",
+    "message": "Invalid request parameters",
+    "details": {
+      "field": "bill_to_phone",
+      "issue": "Invalid phone number format"
+    }
+  }
+}
+```
+
+**Callback Notification Example**
+```json
+{
+  "event_type": "PAYMENT_SUCCESS",
+  "transaction_uuid": "FP-20250704-123456-abc123-CD",
+  "reference": "CMD-1751620411",
+  "amount": 100.5,
+  "currency": "USD",
+  "status": "COMPLETED",
+  "timestamp": "2025-07-04T12:35:30Z",
+  "customer": {
+    "name": "Jane Doe",
+    "email": "jane.doe@example.com"
+  }
+}
+```
+
 ## Environment Configuration
 
 Before running any implementation, ensure you have configured:
