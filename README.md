@@ -11,15 +11,13 @@ This repository contains sample integrations with MokoAfrica's card payment API 
 - 🔗 [LinkedIn Profile](https://linkedin.com/in/henock-barakael)  
 - 🐦 [@hbarakael](https://twitter.com/hbarakael)  
 
----
 
 ## Visual Overview
 
 ### MokoAfrica Logo
 
-![Image](https://github.com/FreshPay-Dev/MokoAfricaIntegration/blob/main/assets/images/logo-mokoafrica.png?raw=true)
+<img src='https://github.com/FreshPay-Dev/MokoAfricaIntegration/blob/main/assets/images/logo-mokoafrica.png?raw=true width='100%' >
 
----
 
 ### Cybersource Hosted Checkout Flow
 
@@ -27,13 +25,12 @@ This repository contains sample integrations with MokoAfrica's card payment API 
 
 ![Step 1 - Enter Card Info](assets/images/payment-details.png)
 
----
 
 #### Step 2: Review the Order
 
 ![Step 2 - Review Order](assets/images/review-order.png)
 
----
+
 
 #### Step 3: Payment Confirmation
 
@@ -41,7 +38,6 @@ This repository contains sample integrations with MokoAfrica's card payment API 
 
 > ✅ **Transactions are securely processed by FreshPay Congo, PCI DSS Level 1 certified.**
 
----
 
 ## Project Structure
 
