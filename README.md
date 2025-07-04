@@ -16,7 +16,7 @@ This repository contains sample integrations with MokoAfrica's card payment API 
 
 ### MokoAfrica Logo
 
-<img src='https://github.com/FreshPay-Dev/MokoAfricaIntegration/blob/main/assets/images/logo-mokoafrica.png?raw=true width='100%' >
+![MokoAfrica Logo](assets/images/logo-mokoafrica.png)
 
 
 ### Cybersource Hosted Checkout Flow
