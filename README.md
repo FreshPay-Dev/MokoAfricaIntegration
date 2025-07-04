@@ -17,7 +17,7 @@ This repository contains sample integrations with MokoAfrica's card payment API 
 
 ### MokoAfrica Logo
 
-![MokoAfrica Logo](./LOGO_MOKO_A_fd_bleu.png)
+![MokoAfrica Logo](./logo-mokoafrica.png)
 
 ---
 
