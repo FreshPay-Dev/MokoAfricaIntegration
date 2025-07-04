@@ -2,7 +2,7 @@
 # MokoAfrica API Integrations
 
 This repository contains sample integrations with MokoAfrica's card payment API in multiple programming languages.
-
+![Step 1 - Enter Card Info](https://raw.githubusercontent.com/FreshPay-Dev/MokoAfricaIntegration/refs/heads/main/assets/images/logo.png)
 ## Author & Maintainer
 
 👤 **Henock Barakael**  
@@ -23,8 +23,7 @@ This repository contains sample integrations with MokoAfrica's card payment API 
 
 #### Step 1: Enter Payment Details
 
-![Step 1 - Enter Card Info](assets/images/payment-details.png)
-
+![Step 1 - Enter Card Info](https://raw.githubusercontent.com/FreshPay-Dev/MokoAfricaIntegration/refs/heads/main/assets/images/logo.png)
 
 #### Step 2: Review the Order
 
