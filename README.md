@@ -5,6 +5,14 @@ Here's a comprehensive `README.md` file for your GitHub repository that document
 
 This repository contains sample integrations with MokoAfrica's card payment API in multiple programming languages.
 
+## Author & Maintainer
+
+👤 **Henock Barakael**  
+- 🏢 MokoAfrica Engineering Team  
+- 📧 henock.barakael@mokoafrica.com  
+- 🔗 [LinkedIn Profile](https://linkedin.com/in/henock-barakael)  
+- 🐦 [@hbarakael](https://twitter.com/hbarakael)  
+
 ## Project Structure
 
 ```
@@ -35,7 +43,7 @@ card-payment-integration/
 ```bash
 cd moko-test-java
 mvn clean package
-java -jar target/your-artifact.jar
+mvn exec:java -Dexec.mainClass="MokoAfricaIntegration"
 ```
 
 ### Node.js Implementation
@@ -98,7 +106,7 @@ For production deployment:
 
 For integration assistance, please contact:
 
-- Technical Support: tech@mokoafrica.com
+- Technical Support: support@gofreshbakery.com
 - API Documentation: [MokoAfrica Developer Portal](https://developer.mokoafrica.com)
 ```
 
